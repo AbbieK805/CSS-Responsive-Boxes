@@ -1,3 +1,65 @@
 body {
   background: peachpuff;
+  margin: 0;
 }
+
+* {
+  border: 1px solid rgba(117, 8, 8, 0.397);
+}
+
+.a, .b, .c, .d, .e, .f, .g, .h {
+  background: rgb(117, 85, 85);
+}
+
+.container {
+  justify-content: space-evenly;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  min-height: 100vh;
+
+}
+
+.wrapper {
+  justify-content: space-evenly;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 15px;
+  min-height: 33vh;
+
+}
+
+.a {
+  min-width: 90vw;
+  min-height: 12vh;
+}
+
+.h {
+  min-width: 90vw;
+  min-height: 33vh;
+}
+
+.b, .c, .d, .e, .f, .g {
+  min-height: 12vh;
+  min-width: 28vw;
+}
+
+@media (min-width: 600px) {
+  .a {
+    min-height: 30vh;
+  }
+  .b, .c, .d, .e, .f, .g {
+    min-width: 25vw;
+    min-height: 30vh;
+    
+  }
+  .wrapper {
+    max-width: 72vw;
+  }
+
+  .h {
+    min-width: 22vw;
+  }
+
+}
+
